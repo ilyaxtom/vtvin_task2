@@ -78,3 +78,25 @@ header img {
     width: 100%;
     margin-top: 39px;
 }
+
+section.slider{
+    margin-top: 215px;
+}
+
+section.slider p:first-child {
+    color: #FFFEF8;
+    text-align: center;
+    font-size: 39px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+section.slider p:nth-child(2) {
+    color: #949494;
+    text-align: center;
+    font-size: 31px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 64px;
+}
