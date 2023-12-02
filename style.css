@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 body {
     margin: 0;
     background-color: #292929;
+    font-family: Roboto;
 }
 
 a {
@@ -52,7 +55,26 @@ ul li:first-child::after {
 ul li:last-child {
     margin-right: 0;
     padding: 12px 24px;
-    background: blue;
+    background: #1938D5;
     border-radius: 12px;
 }
 
+header {
+    margin-top: 145px;
+}
+
+/*HEADER*/
+
+header p {
+    width: 826px;
+    color: #FFFEF8;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+header img {
+    width: 100%;
+    margin-top: 39px;
+}
