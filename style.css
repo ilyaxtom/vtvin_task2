@@ -79,11 +79,13 @@ header img {
     margin-top: 39px;
 }
 
+/*SLIDER*/
+
 section.slider{
     margin-top: 215px;
 }
 
-section.slider p:first-child {
+section.slider p:first-child, .new_way p:first-child {
     color: #FFFEF8;
     text-align: center;
     font-size: 39px;
@@ -92,11 +94,32 @@ section.slider p:first-child {
     margin-bottom: 16px;
 }
 
-section.slider p:nth-child(2) {
+section.slider p:nth-child(2), .new_way p:nth-child(2) {
     color: #949494;
     text-align: center;
     font-size: 31px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 64px;
+}
+
+div.slider {
+    display: flex;
+}
+
+div .card {
+    width: 421px;
+    height: 390px;
+    border-radius: 16px;
+    background: #555151;
+}
+
+.new_way {
+    width: 934px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.new_way img {
+    width: 100%;
 }
