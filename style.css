@@ -237,3 +237,32 @@ div.container img {
     margin-top: 160px;
     width: 100%;
 }
+
+.missing {
+    width: 700px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 122px;
+}
+
+.missing p {
+    font-size: 56px;
+}
+
+.missing button {
+    margin-top: 64px;
+    width: 37%;
+    height: 32px;
+    min-width: 261px;
+    padding: 0 23px;
+    border-radius: 12px;
+    background: #1938D5;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+}
