@@ -58,21 +58,21 @@ nav ul {
     align-items: center;
 }
 
-ul li {
+nav ul li {
     float: left;
     margin-right: 60px;
     font-size: 17px;
     font-weight: 400;
 }
 
-ul li:last-child {
+nav ul li:last-child {
     margin-right: 0;
     padding: 12px 24px;
     background: #1938D5;
     border-radius: 12px;
 }
 
-ul li:first-child::after {
+nav ul li:first-child::after {
     content: '˅';
     color: #fff;
     margin-left: 10px;
@@ -254,6 +254,7 @@ div.container img {
 
 .missing button {
     margin-top: 64px;
+    margin-bottom: 16px;
     width: 37%;
     height: 32px;
     min-width: 261px;
@@ -265,4 +266,139 @@ div.container img {
     font-size: 24px;
     font-weight: 400;
     border: none;
+}
+
+.partners {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners p {
+    color: #949494;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.icons {
+    margin-top: 33px;
+}
+
+.icons img {
+    width: 40px;
+    margin-right: 56px;
+}
+
+.icons img:last-child {
+    margin-right: 0;
+}
+
+/*LINKS*/
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(50%, 2);
+    grid-template-rows: 308px;
+    margin-top: 150px;
+}
+
+.left {
+    grid-area: 1 / 1;
+}
+
+.left img:first-child {
+    display: block;
+    width: 96px;
+}
+
+.left img:last-child {
+    width: 249px;
+    margin-top: 96px;
+}
+
+
+.right {
+    grid-area: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: auto;
+}
+
+.right .part:first-child {
+    grid-area: 1 / 1;
+}
+
+.right .part:nth-child(2) {
+    grid-area: 1 / 2;
+}
+
+.right .part:last-child {
+    grid-area: 1 / 3;
+}
+
+.part p {
+    color: #949494;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+}
+
+.part ul {
+    list-style: none;
+    color: #FFFEF8;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.part ul li {
+    margin-bottom: 12px;
+}
+
+.part ul li:hover {
+    text-decoration: underline;
+}
+
+.part ul li:last-child {
+    margin-bottom: 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #BFBFBF;
+    font-size: 11px;
+    margin: 128px 0;
+}
+
+.info a {
+    color: #BFBFBF;
+    font-size: 11px;
+    margin-right: 24px;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.info > div {
+    display: flex;
+    align-items: center;
+}
+
+.info .icons {
+    margin-top: 0;
+}
+
+.info .icons img {
+    margin-right: 8px;
+}
+
+.info .icons img:last-child {
+    margin-right: 0;
 }
