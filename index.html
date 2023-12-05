@@ -8,19 +8,34 @@
     <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
 </head>
 <body>
-    <nav class="container">
-        <img src="images/logo.svg" alt="Logo">
-        <ul>
-            <li><a href="#">Work hub</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Get started</a></li>
-        </ul>
-    </nav>
-
     <header class="container ">
-        <p>Work gets disjointed. Scattered. People feel isolated. Qatalog brings order to the chaos—to show folks their work in a new light.</p>
-        <img src="images/team.png" alt="we">
+        <div class="menu_bar">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="Logo">
+            </a>
+
+            <img src="images/burger-menu.svg" alt="Burger Menu" class="menu_icon" onclick="toggleMenu(this)">
+            
+            <ul class="navigation">
+                <li>
+                    <a href="#">Work up</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">Get started</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="poster">
+            <p>Work gets disjointed. Scattered. People feel isolated. Qatalog brings order to the chaos—to show folks their work in a new light.</p>
+            <img src="images/team.png" alt="we">
+        </div>
     </header>
+
+    <script src="script.js"></script>
 
     <section class="container slider">
         <p>You're not alone</p>

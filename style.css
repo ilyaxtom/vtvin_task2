@@ -41,57 +41,86 @@ p:nth-child(2) {
 
 /*NAVIGATION*/
 
-nav {
+.menu_bar {
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
 }
 
-nav img {
-    height: 40px;
+.menu_icon {
+    cursor: pointer;
+    display: flex;
+    width: 32px;
+    height: 32px;
 }
 
-nav ul {
-    list-style: none;
+.navigation {
     display: flex;
     align-items: center;
+    list-style: none;
 }
 
-nav ul li {
-    float: left;
-    margin-right: 60px;
+.navigation > li {
+    display: flex;
+    position: relative;
+    cursor: pointer;
     font-size: 17px;
-    font-weight: 400;
+    margin-left: 44px;
 }
 
-nav ul li:last-child {
-    margin-right: 0;
+.navigation > li:first-child::after {
+    content: '˅';
+    font-weight: 600;
+    margin-left: 8px;
+    margin-top: 2px;
+    color: #fff;
+}
+
+.navigation > li:last-child {
     padding: 12px 24px;
     background: #1938D5;
     border-radius: 12px;
 }
 
-nav ul li:first-child::after {
-    content: '˅';
-    color: #fff;
-    margin-left: 10px;
-    font-weight: 600;
+.menu_icon {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        display: none;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    .navigation_mobile {
+        top: 90px;
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: blue;
+    }
 }
 
 /*HEADER*/
 
-header.container {
+header .poster {
     margin-top: 145px;
 }
 
-header p {
+header .poster p {
     width: 63%;
     max-width: 826px;
     margin: 0 auto;
 }
 
-header img {
+header .poster img {
     width: 100%;
     margin-top: 39px;
 }
