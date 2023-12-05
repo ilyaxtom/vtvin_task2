@@ -88,39 +88,6 @@ p:nth-child(2) {
     display: none;
 }
 
-@media (max-width: 800px) {
-    .navigation {
-        display: none;
-    }
-
-    .menu_icon {
-        display: block;
-    }
-
-    .navigation_mobile {
-        position: absolute;
-        top: 80px;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        width: 50vw;
-        background-color: rgba(18, 18, 18, 0.9);
-        border-radius: 12px;
-    }
-
-    .navigation > li {
-        margin-left: 0;
-        margin-top: 30px;
-        font-size: 24px;
-    }
-
-    .navigation > li:last-child {
-        margin-bottom: 30px;
-        opacity: 1;
-    }
-}
-
 /*HEADER*/
 
 header .poster {
@@ -194,6 +161,8 @@ div .card {
     margin-bottom: 126px;
 }
 
+/*INGREDIENTS*/
+
 .ingredients {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -245,27 +214,29 @@ div .desc {
 
 .secure {
     margin-top: 160px;
-    padding: 0 204px;
-    display: grid;
-    grid-template-columns: repeat(33%, 3);
-    grid-template-rows: 1fr 122px;
-    gap: 24px;
 }
 
 .secure p {
     margin-bottom: 40px;
-    grid-area: 1 / 1 / 2 / 4;
+}
+
+.secure .cards {
+    display: flex;
+    justify-content: center;
 }
 
 .sec_card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 190px;
+    width: 22%;
+    max-width: 286px;
 }
 
 .sec_card img {
-    width: 64px;
+    width: 22%;
+    min-width: 46px;
+    max-width: 64px;
     margin-bottom: 34px;
 }
 
@@ -273,7 +244,10 @@ div .desc {
     color: #949494;
     font-size: 17px;
     font-weight: 400;
+    text-align: center;
 }
+
+/**/
 
 div.container img {
     margin-top: 160px;
@@ -281,7 +255,9 @@ div.container img {
 }
 
 .missing {
-    width: 700px;
+    width: 54%;
+    min-width: 500px;
+    max-width: 700px;
     padding: 0 40px;
     margin: 0 auto;
     display: flex;
@@ -326,6 +302,9 @@ div.container img {
 
 .icons {
     margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .icons img {
@@ -443,4 +422,142 @@ div.container img {
 
 .info .icons img:last-child {
     margin-right: 0;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    .ingredients {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr repeat(3, 150px);
+        gap: 24px;
+    }
+        
+    .ingredients p {
+        grid-area: 1 / 1 / 2 / 3;
+        margin-bottom: 40px;
+    }
+
+    div .head {
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    
+    div .desc {
+        line-height: 17px;
+    }
+
+    .missing p {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navigation {
+        display: none;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    .navigation_mobile {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50vw;
+        background-color: rgba(18, 18, 18, 0.9);
+        border-radius: 12px;
+    }
+
+    .navigation > li {
+        margin-left: 0;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    .navigation > li:last-child {
+        margin-bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    p:first-child {
+        font-size: 24px;
+    }
+    
+    p:nth-child(2) {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+    header .poster {
+        margin-top: 70px;
+    }
+
+    header .poster p {
+        width: 100%;
+    }
+
+    section.slider {
+        margin-top: 30px;
+    }
+
+    .new_way, .visibility, .secure, div.container, .missing, .partners, .info {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .missing {
+        max-width: 600px;
+        min-width: 300px;
+    }
+
+    .secure > .cards > .sec_card {
+        width: 33%;
+    }
+
+    div.container > img {
+        margin: 0;
+    }
+
+    .missing p {
+        width: 100%;
+    }
+
+    .missing button {
+        margin-top: 0;
+    }
+
+    .partners .icons {
+        margin-top: 0;
+    }
+
+    .partners .icons img {
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    .links {
+        margin-top: 40px;
+    }
+
+    .links .left {
+        display: none;
+    }
+
+    .links .right .part {
+        margin-right: 10px;
+    }
+
+    .links .right .part:last-child {
+        margin-right: 0;
+    }
 }
