@@ -560,4 +560,36 @@ div.container img {
     .links .right .part:last-child {
         margin-right: 0;
     }
+
+    .info {
+        margin-bottom: 10px;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .info > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .info > div > a {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+
+    .info > div > .icons {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+        .ingredients {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .in_card {
+            width: 100%;
+        }
 }
