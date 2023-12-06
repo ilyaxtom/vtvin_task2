@@ -15,3 +15,8 @@ let toggleMenu = () => {
     else 
         navigation.classList.toggle('navigation_mobile');
 };
+
+let sub_menu = () => {
+    let work_up = document.querySelector('.first_li');
+    work_up.classList.toggle('clicked');
+}
