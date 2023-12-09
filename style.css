@@ -153,23 +153,67 @@ header .poster img {
 
 /*SLIDER*/
 
-section.slider {
+.slider-container {
     margin-top: 215px;
 }
 
-section.slider p:first-child {
-    margin-bottom: 16px;
-}
-
-div.slider {
+.slides {
     display: flex;
+    overflow: hidden;
 }
 
-div .card {
-    width: 421px;
+.slides .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    min-width: 300px;
     height: 390px;
     border-radius: 16px;
     background: #555151;
+    margin-right: 25px;
+    padding: 32px;
+}
+
+.slides .slide:last-child {
+    margin-right: 0;
+}
+
+.slide > img{
+    width: 30%;
+    min-width: 100px;
+}
+
+.slide > p {
+    color: #949494;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.slide > span {
+    color: #949494;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+}
+
+@media (min-width: 800px) {
+    .slide {
+        transition: .3s;
+    }
+
+    .slide:hover {
+        background-color: #1CFFE4;
+    }
+
+    .slide:hover > p, .slide:hover > span {
+        color: #292929;
+    }
+}
+
+@media (max-width: 800px) {
+
 }
 
 /*NEW WAY*/
@@ -295,7 +339,7 @@ div .desc {
 
 /**/
 
-div.container img {
+div.container > img {
     margin-top: 160px;
     width: 100%;
 }
