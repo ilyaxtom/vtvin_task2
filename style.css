@@ -92,6 +92,20 @@ p:nth-child(2) {
     li.clicked > .dropdown {
         display: block;
         position: absolute;
+        left: -150%;
+        top: -30px;
+        background-color: rgba(18, 18, 18, 0.9);
+    }
+
+    .navigation > li:first-child::after {
+        display: none;
+    }
+
+    .navigation > li:first-child::before {
+        content: '<';
+        color: #fff;
+        font-weight: 400;
+        margin-right: 5px;
     }
 }
 
