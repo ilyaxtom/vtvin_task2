@@ -42,31 +42,41 @@
 
     <script src="script.js"></script>
 
-    <div class="slider-container container">
+    <section class="container slides">
         <p>You're not alone</p>
         <p>The pains of work are real</p>
-        <div class="slides">
-            <div class="slide" id="slide1">
-                <img src="images/slides/airbnb.svg" alt="">
-                <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner and escalation process.</p>
-                <span>Francesca Ceseracciu<br>Head of Hotels EMEA</span>
+
+        <div class="slider">
+            <div class="sliderline">
+                <div class="slider-item" id="slide1">
+                    <img src="images/airbnb.svg" alt="">
+                    <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner and escalation process.</p>
+                    <span>Francesca Ceseracciu<br>Head of Hotels EMEA</span>
+                </div>
+                
+                <div class="slider-item" id="slide2">
+                    <img src="images/square.svg" alt="">
+                    <p>We spend about 45 minutes every day invested in processes for updates and keeping everybody in sync.</p>
+                    <span>Fabrizio Caracausi<br>Product</span>
+                </div>
+                
+                <div class="slider-item" id="slide3">
+                    <img src="images/hewlet.svg" alt="">
+                    <p>We deliver on such an expansive innovation agenda with so many projects going on at any time, it can be hard to maintain momentum.</p>
+                    <span>Patrick Osborne<br>Vice President</span>
+                </div>
             </div>
-            
-            <div class="slide" id="slide2">
-                <img src="images/slides/square.svg" alt="">
-                <p>We spend about 45 minutes every day invested in processes for updates and keeping everybody in sync.</p>
-                <span>Fabrizio Caracausi<br>Product</span>
-            </div>
-            
-            <div class="slide" id="slide3">
-                <img src="images/slides/hewlet.svg" alt="">
-                <p>We deliver on such an expansive innovation agenda with so many projects going on at any time, it can be hard to maintain momentum.</p>
-                <span>Patrick Osborne<br>Vice President</span>
+
+            <button class="slider-button-prev">&#60;</button>
+            <button class="slider-button-next">&#62;</button>
+
+            <div class="slider-wrapper">
+                <span class="slider-dot active-dot"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
             </div>
         </div>
-        <button onclick="prevSlide()">Предыдущий слайд</button>
-        <button onclick="nextSlide()">Следующий слайд</button>
-    </div>
+    </section>
 
     <script src="slider_script.js"></script>
 
