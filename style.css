@@ -284,6 +284,13 @@ header .poster img {
     }
 }
 
+@media (max-width: 360px) {
+    .slider-item > p:nth-child(2) {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+}
+
 /*NEW WAY*/
 
 .new_way {
