@@ -196,7 +196,6 @@ header .poster img {
 }
 
 .slider-item > p {
-    font-size: 24px;
     margin-top: 40px;
 }
 
@@ -227,6 +226,62 @@ header .poster img {
 .active-dot {
     width: 24px;
     background-color: #FFFEF8;
+}
+
+.slider button {
+    display: none;
+    font-size: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.slider > .slider-wrapper {
+    margin-top: 10px;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .sliderline {
+        justify-content: center;
+    }
+
+    .sliderline .slider-item {
+        display: none;
+        width: 60%;
+        height: 350px;
+    }
+
+    .sliderline .active-item {
+        display: flex;
+    }
+
+    .sliderline .active-item p {
+        font-size: 20px;
+    }
+
+    .slider > .slider-wrapper {
+        display: flex;
+    }
+
+    .slider button {
+        display: inline;
+    }
+
+    .buttons {
+        width: auto;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .sliderline > .slider-item {
+        width: 90%;
+    }
 }
 
 /*NEW WAY*/
